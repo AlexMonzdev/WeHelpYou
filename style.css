@@ -1,4 +1,5 @@
 body {
+    margin: 0 auto;
     background-color: #FFCA41;
 }
 
@@ -9,11 +10,11 @@ body {
         "nav"  50px
         "main" auto
         "cards" auto
-        "foot" 20px;
+        "foot" 200px;
     background-color: #FFFFFF;
     border: 1px solid black;
     padding: 20px;
-
+}
 
 .header {
     grid-area: head;
@@ -31,14 +32,14 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #ffffff;
+    background-color: #FF7F99;
     border: 1px solid black;
     text-align: center;
 }
 
 .sidebar {
     grid-area: cards;
-    background-color: #ffffff;
+    background-color: #FF7F99;
     border: 1px solid black;
     text-align: center;
 }
@@ -51,14 +52,14 @@ body {
 }
 
 .caja1{
-    background-color: #FF7F99;
+    background-color: #ffffff;
     border: 1px solid black;
     height: 300px;
     width: 100%;
 }
 
 .caja2{
-    background-color: #FF7F99;
+    background-color: #ffffff;
     border: 1px solid black;
     height: 300px;
     width: 100%;
@@ -73,33 +74,74 @@ body {
 
 
 
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
     .grid-layout {   
         grid-template: 
             "head nav" 50px
             "head nav" 50px
             "main main" auto
             "cards cards" auto 
-            "foot foot" 20px/
+            "foot foot" 200px/
             50% auto;
     }
     .caja1{
-        height: 300px;
+        height: 500px;
         width: 50%;
     }
     .caja2{
-        height: 300px;
+        height: 500px;
         width: 50%
     }
     .main {
         display: flex;
+        justify-content: space-around;
     }
     .sidebar{
         display: flex;
     }
 }
 
+@media (min-width: 1000px) {
+    .grid-layout {   
+        grid-template: 
+            "head head head" 150px
+            "nav main main" auto
+            "cards cards cards" auto 
+            "foot foot foot" 200px/
+            15% auto auto;
+    }
+    .caja1{
+        background-color: aqua;
+        height: 500px;
+        width: 50%;
+    }
+    .caja2{
+        height: 500px;
+        width: 50%;
+    }
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+    .sidebar{
+        display: flex;
+    }
+    .card{
+        background-color: #17dd7a;
+        border: 1px solid black;
+        height: 500px;
+        width: 100%;
+    }
+
+    body{
+        width: 90%; /* Define un ancho para el body */
+        margin: 0 auto; /* Centra horizontalmente */
+        
+
+    }
 }
+
+
     
 
 
