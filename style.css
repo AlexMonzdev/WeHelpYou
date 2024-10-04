@@ -1,0 +1,110 @@
+body {
+    background-color: #FFCA41;
+}
+
+.grid-layout {   
+    display: grid;
+    grid-template: 
+        "head" 100px
+        "nav"  50px
+        "main" auto
+        "cards" auto
+        "foot" 20px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 20px;
+
+
+.header {
+    grid-area: head;
+    background-color: #FF7F99;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: #FF7F99;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: cards;
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: #FF7F99;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.caja1{
+    background-color: #FF7F99;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+}
+
+.caja2{
+    background-color: #FF7F99;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+}
+
+.card{
+    background-color: #17dd7a;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+    @media (min-width: 768px) {
+    .grid-layout {   
+        grid-template: 
+            "head nav" 50px
+            "head nav" 50px
+            "main main" auto
+            "cards cards" auto 
+            "foot foot" 20px/
+            50% auto;
+    }
+    .caja1{
+        height: 300px;
+        width: 50%;
+    }
+    .caja2{
+        height: 300px;
+        width: 50%
+    }
+    .main {
+        display: flex;
+    }
+    .sidebar{
+        display: flex;
+    }
+}
+
+}
+    
+
+
+
+
+
+
+
